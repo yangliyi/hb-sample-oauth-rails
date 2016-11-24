@@ -1,0 +1,7 @@
+<%= link_to 'Please click here to authorize and get the authorization code for login', "/honestbee/code", :target => '_blank' %>
+
+<%= form_tag honestbee_token_path do %>
+  <%= label_tag :code %>
+  <%= text_field_tag :code %>
+  <%= submit_tag "Honestbee Log In" %>
+<% end %>
